@@ -7,7 +7,7 @@ body {
 table {
     border-spacing: 0;
     font-family: 'Avenir', sans-serif;
-    color: #333333;
+    color: #263137;
 }
 td {
     padding: 0;
@@ -35,6 +35,20 @@ Margin: 0 auto;
     max-width: 600px;
 }
 
+.full-width-image h1 {
+    color:#fff;
+    
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.full-width-image div.wrapper {
+    padding: 35px 55px;
+    max-width: 490px;
+}
+
 .full-width-image img {
     width: 100%;
     max-width: 600px;
@@ -47,7 +61,7 @@ Margin: 0 auto;
 
 @media screen and (min-width:600px) {
     .one-column .inner {
-        padding: 30px 50px;
+        padding: 30px 50px 0;
     }
 }
 
@@ -144,11 +158,12 @@ a.button {
 
 .productDescription {
     Margin-top:20px;
-    Margin-bottom:40px;
+    Margin-bottom:33px;
     font-style: italic;
 }
 
 .mrsp {
     min-width: 100px;
     display: inline-block;
+    font-weight: 500;
 }

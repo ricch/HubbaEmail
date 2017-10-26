@@ -44,7 +44,7 @@ $('.cheers').append (`
 	<table width="100%">
 		<tr>
 			<td class="inner contents">
-			<p>We hope you love these products. If you don’t please let us know how we can help. We’d love to hear more from you!</p>
+			<p>Thanks very much for checking out the best of Hubba’s camping products. Make sure to click to find out more about the product.</p>
 				<p>Cheers, <br>
 				The Team at Hubba </p>
 			</td>
@@ -93,16 +93,17 @@ for (i = 0; i <= campingProducts.length; i++) {
 												<td class="text contentsText">
 													<span class="companyName">${campingProducts[i].companyName}</span> - <span class="productName">${campingProducts[i].productName}</span>
 															<p class="productDescription">${campingProducts[i].productDescription}</p>
-															<p>
-																<strong class="mrsp">MRSP: ${campingProducts[i].MSPR}</strong>
-																<div><!--[if mso]>
+															
+																
+																<div>
+																<span class="mrsp">MRSP: ${campingProducts[i].MSPR}</span><!--[if mso]>
 																  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:25px;v-text-anchor:middle;width:80px;" arcsize="100%" strokecolor="#91a4b5" fillcolor="#fff">
 																    <w:anchorlock/>
 																    <center style="color:#3b4c56;font-family:sans-serif;font-size:13px;font-weight:bold;">Order</center>
 																  </v:roundrect>
 																<![endif]--><a href="${campingProducts[i].URL}"
 																style="background-color:#fff;border:1px solid #91a4b5;border-radius:25px;color:#3b4c56;display:inline-block;font-family:sans-serif;font-size:11px;line-height:25px;text-align:center;text-decoration:none;width:80px;height:25px;-webkit-text-size-adjust:none;mso-hide:all;">Order</a></div>
-															</p>
+															
 
 															
 												</td>
