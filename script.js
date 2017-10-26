@@ -53,8 +53,10 @@ $('.cheers').append (`
 `)
 
 for (i = 0; i <= campingProducts.length; i++) {
-	$('.two-column').append(`
-
+	$('.two-column-wrapper').append(`
+		<tr class="two-column-row">
+		<td class="two-column">
+		
 		<!--[if (gte mso 9)|(IE)]>
 						<table width="100%">
 						<tr>
@@ -120,5 +122,7 @@ for (i = 0; i <= campingProducts.length; i++) {
 						</tr>
 						</table>
 						<![endif]-->
+			</td>
+		</tr>
 	`);
 }
