@@ -93,7 +93,7 @@ for (i = 0; i <= campingProducts.length; i++) {
 										<table class="contents">
 											<tr>
 												<td class="text contentsText">
-													<span class="companyName">${campingProducts[i].companyName}</span> - <span class="productName">${campingProducts[i].productName}</span>
+													<span class="companyProduct">${campingProducts[i].companyName} - ${campingProducts[i].productName}</span>
 															<p class="productDescription">${campingProducts[i].productDescription}</p>
 															
 																

@@ -2,12 +2,13 @@
 body {
     margin: 0 !important;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #eee;
 }
 table {
     border-spacing: 0;
     font-family: 'Avenir', sans-serif;
     color: #263137;
+    background-color: #fff
 }
 td {
     padding: 0;
@@ -58,6 +59,10 @@ Margin: 0 auto;
     padding: 0 20px;
 }
 
+.one-column .inner {
+    padding-top:30px;
+}
+
 @media screen and (min-width:600px) {
     .one-column .inner {
         padding: 30px 50px 0;
@@ -103,12 +108,16 @@ a.button {
     font-size: 0;
 }
 
+.two-column-row {
+    margin-bottom: 45px;
+    display: block;
+}
+
 @media screen and (min-width:600px) {
     .two-column-row {
         max-height: 214px;
         display: inline-block;
         overflow:hidden;
-        margin-bottom: 45px;
     }
 }
 
@@ -159,21 +168,39 @@ a.button {
     }
 }
 
-.companyName, .productName {
+.companyProduct {
     text-transform: uppercase;
     font-style: italic;
+    display: inline-block;
+    min-height: 30px;
 }
 
 .productDescription {
-    Margin-top:20px;
-    Margin-bottom:33px;
+    margin-bottom: 33px;
     font-style: italic;
-    max-height: 114px;
-    overflow: hidden;
+}
+
+@media screen and (min-width:600px) {
+    .productDescription {
+        Margin-bottom:10px;
+        max-height: 130px;
+        overflow: hidden;
+        margin-bottom: 25px;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        max-width: 300px;
+        display: block;
+        display: -webkit-box;
+    }
 }
 
 .mrsp {
     min-width: 100px;
     display: inline-block;
     font-weight: 500;
+}
+
+.cheers .inner {
+    padding-bottom: 40px;
 }
