@@ -58,10 +58,10 @@ for (i = 0; i <= campingProducts.length; i++) {
 		<!--[if (gte mso 9)|(IE)]>
 						<table width="100%">
 						<tr>
-						td width="50%" valign="top">
+						<td width="50%" valign="top">
 						<![endif]-->
 						
-							<div class="column">
+							<div class="column columnLeft">
 							<table width="100%">
 								<tr>
 									<td class="inner">
@@ -83,7 +83,7 @@ for (i = 0; i <= campingProducts.length; i++) {
 						</td><td width="50%" valign="top">
 						<![endif]-->
 						
-							<div class="column">
+							<div class="column columnRight">
 							<table width="100%">
 								<tr>
 									<td class="inner">
@@ -93,7 +93,18 @@ for (i = 0; i <= campingProducts.length; i++) {
 												<td class="text contentsText">
 													<span class="companyName">${campingProducts[i].companyName}</span> - <span class="productName">${campingProducts[i].productName}</span>
 															<p class="productDescription">${campingProducts[i].productDescription}</p>
-															<p><strong class="mrsp">MRSP: ${campingProducts[i].MSPR}</strong> <a class="button" href="${campingProducts[i].URL}" target="_blank">Order</a></p>
+															<p>
+																<strong class="mrsp">MRSP: ${campingProducts[i].MSPR}</strong>
+																<div><!--[if mso]>
+																  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:25px;v-text-anchor:middle;width:80px;" arcsize="100%" strokecolor="#91a4b5" fillcolor="#fff">
+																    <w:anchorlock/>
+																    <center style="color:#3b4c56;font-family:sans-serif;font-size:13px;font-weight:bold;">Order</center>
+																  </v:roundrect>
+																<![endif]--><a href="${campingProducts[i].URL}"
+																style="background-color:#fff;border:1px solid #91a4b5;border-radius:25px;color:#3b4c56;display:inline-block;font-family:sans-serif;font-size:11px;line-height:25px;text-align:center;text-decoration:none;width:80px;height:25px;-webkit-text-size-adjust:none;mso-hide:all;">Order</a></div>
+															</p>
+
+															
 												</td>
 											</tr>
 										</table>
