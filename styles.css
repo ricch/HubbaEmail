@@ -25,6 +25,11 @@ div[style*="margin: 16px 0"] {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
+@media only screen and (max-width:480px){
+    .wrapper {
+        width: auto;
+    }
+}
 .webkit {
     max-width: 600px;
     margin: 0 auto;
@@ -35,7 +40,9 @@ Margin: 0 auto;
     width: 100%;
     max-width: 600px;
 }
-
+@media only screen and (max-width:480px){
+    table[class="outer"]{width:100% !important; max-width: 480px !important;}
+}
 .full-width-image h1 {
     color:#fff;
     font-size: 36px;
@@ -43,10 +50,22 @@ Margin: 0 auto;
     font-weight: 400;
     margin: 0 0 25px;
 }
+@media only screen and (max-width:480px){
+    .full-width-image h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
 
 .full-width-image div.wrapper {
     padding: 35px 55px;
-    max-width: 490px;
+    max-width: 380px;
+}
+@media only screen and (max-width:480px){
+    .full-width-image div.wrapper {
+        text-align: center;
+        padding: 35px;
+    }
 }
 
 .full-width-image img {

@@ -54,6 +54,7 @@ $('.cheers').append (`
 
 for (i = 0; i <= campingProducts.length; i++) {
 	$('.two-column-wrapper').append(`
+	<table width="100%">
 		<tr class="two-column-row">
 		<td class="two-column">
 		
@@ -67,7 +68,6 @@ for (i = 0; i <= campingProducts.length; i++) {
 							<table width="100%">
 								<tr>
 									<td class="inner">
-
 										<table class="contents">
 											<tr>
 												<td class="contentsImage">
@@ -75,12 +75,10 @@ for (i = 0; i <= campingProducts.length; i++) {
 												</td>
 											</tr>
 										</table>
-
 									</td>
 								</tr>
 							</table>
 							</div>
-
 						<!--[if (gte mso 9)|(IE)]>
 						</td><td width="50%" valign="top">
 						<![endif]-->
@@ -106,17 +104,14 @@ for (i = 0; i <= campingProducts.length; i++) {
 																<![endif]--><a href="${campingProducts[i].URL}"
 																style="background-color:#fff;border:1px solid #91a4b5;border-radius:25px;color:#3b4c56;display:inline-block;font-family:sans-serif;font-size:11px;line-height:25px;text-align:center;text-decoration:none;width:80px;height:25px;-webkit-text-size-adjust:none;mso-hide:all;">Order</a></div>
 															
-
 															
 												</td>
 											</tr>
 										</table>
-
 									</td>
 								</tr>
 							</table>
 							</div>
-
 						<!--[if (gte mso 9)|(IE)]>
 						</td>
 						</tr>
@@ -124,5 +119,6 @@ for (i = 0; i <= campingProducts.length; i++) {
 						<![endif]-->
 			</td>
 		</tr>
+		</table>
 	`);
 }
